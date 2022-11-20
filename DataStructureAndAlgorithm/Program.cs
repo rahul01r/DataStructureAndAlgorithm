@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Insertion Sort");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -19,6 +19,10 @@
                         BubbleSort bubblesort = new BubbleSort();
                         bubblesort.Sort(@"C:\Users\Lenovo\Desktop\Git\DataStructureAndAlgorithm\DataStructureAndAlgorithm\Word.txt");
                         break;
+                    case 3:
+                        InsertionSort insertionsort = new InsertionSort();
+                        insertionsort.Insertion();
+                        break ;
                 }
             }
         }
