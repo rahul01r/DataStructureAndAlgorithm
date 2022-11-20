@@ -1,5 +1,5 @@
 ﻿ namespace DataStructureAndAlgorithm
-{
+ {
     public class Program
     {
         static void Main(string[] args)
@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Insertion Sort\n 4.Merge Sort");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Insertion Sort\n 4.Merge Sort\n 5.Anagram");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,8 +41,12 @@
                         }
                         Console.WriteLine();
                         break;
+                    case 5:
+                        Anagram anagram = new Anagram();
+                        anagram.AnagramWord("heart", "earth");
+                        break;
                 }
             }
         }
     }
-}
+ }
